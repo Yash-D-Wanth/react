@@ -1,12 +1,14 @@
 
 
-import Props from './Functional/Props'
-import State from './Functional/State'
+// import Props from './Functional/Props'
+// import State from './Functional/State'
+import Event from './Functional/Event'
 function App() {
   return (
     <>
       {/* <Props name="React Develope */}
-      <State />
+      {/* <State /> */}
+      <Event />
     </>
   )
 }
