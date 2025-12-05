@@ -1,9 +1,10 @@
 import React from 'react'
 
 function Props(props) {
+  const {name}=props
   return (
     <>
-        <h1>Hello, {props.name}!</h1>
+        <h1>Hello, {name}!</h1>
     </>
   )
 }
