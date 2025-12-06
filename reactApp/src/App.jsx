@@ -6,6 +6,7 @@ import React from 'react'
 // import Array from './class/Array.jsx'
 // import Objects from './class/Objects.jsx'
 // import Map from './class/Map.jsx'
+import List from './class/list.jsx'
 function App() {
   // const persons=["jonathan","steve","hopper"]                   {array}
 
@@ -16,6 +17,7 @@ function App() {
   // }
   return (
     <div>
+      <List />
       {/* <Map /> */}
       {/* <Props name="Yashwanth"/>
       <State /> */}
