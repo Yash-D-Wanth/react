@@ -2,13 +2,15 @@
 
 // import Props from './Functional/Props'
 // import State from './Functional/State'
-import Event from './Functional/Event'
+import Conditional from './Functional/Conditional'
+// import Event from './Functional/Event'
 function App() {
   return (
     <>
       {/* <Props name="React Develope */}
       {/* <State /> */}
-      <Event />
+      {/* <Event /> */}
+        <Conditional />
     </>
   )
 }
