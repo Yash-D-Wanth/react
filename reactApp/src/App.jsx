@@ -5,6 +5,7 @@ import React from 'react'
 // import Conditional from './class/Conditional'
 // import Array from './class/Array.jsx'
 // import Objects from './class/Objects.jsx'
+// import Map from './class/Map.jsx'
 function App() {
   // const persons=["jonathan","steve","hopper"]                   {array}
 
@@ -15,6 +16,7 @@ function App() {
   // }
   return (
     <div>
+      {/* <Map /> */}
       {/* <Props name="Yashwanth"/>
       <State /> */}
       {/* <Event /> */}
