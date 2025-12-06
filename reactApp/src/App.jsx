@@ -6,6 +6,7 @@
 // import Event from './Functional/Event'
 // import Array from "./Functional/Array"
 // import Objects from "./Functional/Objects"
+import Map from './Functional/Map'
 function App() {
     // const person=["davy D jones","joyboy","monkey D luffy"]                 {array}
 
@@ -17,6 +18,7 @@ function App() {
     // }
   return (
     <>
+      <Map />
       {/* <Props name="React Develope */}
       {/* <State /> */}
       {/* <Event /> */}
