@@ -1,38 +1,51 @@
-import {Component} from 'react'
-export default class Form extends Component{
-    constructor(props){
+
+import { Component } from 'react'
+import FormChild from './FormChild'
+
+export default class Form extends Component {
+    constructor(props) {
         super(props)
-        this.state={
-            name:"",
-            email:"",
-            skills:""
+        this.state = {
+            name: "",
+            email: "",
+            gender: "",
+            skills: "",
+            country: "react",
         }
     }
-    handleNameChange=(event)=>{
-        this.setState({name:event.target.value})
+    handleSkill = (event) => {
+        this.setState({
+            skills: event.target.value
+        })
     }
-    handleEmailChange=(event)=>{
-        this.setState({email:event.target.value})
+    handleGender = (event) => {
+        this.setState({
+            gender: event.target.value
+        })
     }
-    handleSkillsChange=(event)=>{
-        this.setState({skills:event.target.value})
+    handleName = (event) => {
+        this.setState({
+            name: event.target.value
+        })
     }
-    render(){
-        return(
+    handleEmail = (event) => {
+        this.setState({
+            email: event.target.value
+        })
+    }
+    handleCountry = (event) => {
+        this.setState({
+            country: event.target.value
+        })
+    }
+    render() {
+        return (
             <>
-            <Form>
-                <label>Name</label>
-                <input type="text" value={this.state.name}/>
-                <label>Email</label>
-                <input type="email" value={this.state.email}/>
-                <label>Password</label>
-                <select value={this.state.skills}>
-                    <option value="">Select</option>
-                    <option value="React">React</option>
-                    <option value="Angular">Angular</option>
-                    <option value="Vue">Vue</option>
-                </select>
-            </Form>
+                <FormChild name={this.state.name} email={this.state.email}
+                    gender={this.state.gender} skills={this.state.skills} country={this.state.country}
+                    forName={this.handleName} forEmail={this.handleEmail}
+                    forGender={this.handleGender} forSkills={this.handleSkill}
+                    forCountry={this.handleCountry} />
             </>
         )
     }

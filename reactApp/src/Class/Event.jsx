@@ -1,21 +1,22 @@
-import {Component} from 'react';
+
+import { Component } from 'react';
 import Child from './Child'
-export default class Event extends Component{
-    constructor(){
+export default class Event extends Component {
+    constructor() {
         super();
-        this.state={
-            count:0
+        this.state = {
+            count: 0
         }
     }
-    increment=(num)=>{
+    increment = (num) => {
         this.setState({
-            count:this.state.count+num
-    })
+            count: this.state.count + num
+        })
     }
-    render(){
-        return(
+    render() {
+        return (
             <>
-                <Child count={this.state.count} function={this.increment}/>
+                <Child count={this.state.count} function={this.increment} />
             </>
         )
     }
