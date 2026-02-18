@@ -7,6 +7,7 @@ import Conditional from './Class/Conditional'
 import List from './Class/List'
 import Form from './Class/Form'
 import LifeCycleA from './Class/LifeCycleA'
+import ParentComp from './Class/ParentComp'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {/* <List/> */}
       {/* <Form/> */}
       <LifeCycleA />
+      <ParentComp/>
       {/* Uncomment the below components to see them rendered */}
       <Event />
       <Conditional />
