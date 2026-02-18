@@ -4,11 +4,9 @@ export default class RegComp extends Component{
         super(props)
     }
     render(){
-        console.log("regular component")
         return(
-            
             <>
-            <p>from RegComponent {this.props.name}</p>
+            {console.log(`regular component ${this.props.name}`)}
             </>
         )
     }

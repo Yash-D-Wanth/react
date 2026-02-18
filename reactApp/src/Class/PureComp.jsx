@@ -4,10 +4,9 @@ export default class PureComp extends PureComponent{
         super(props)
     }
     render(){
-        console.log("pure Component")
         return(
             <>
-            <p>from pureComponent {this.props.name}</p>
+               {console.log(`pure component ${this.props.name}`)}
             </>
         )
     }

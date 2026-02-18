@@ -1,30 +1,32 @@
-import { Component } from "react";
-import RegComp from './RegComp'
 import PureComp from './PureComp'
-export default class ParentComp extends Component {
-    constructor() {
+import RegComp from './RegComp'
+import MemoComp from './MemoComp'
+// import {PureComponent} from 'react'
+import {Component} from 'react'
+export default class ParentComp extends Component{
+    constructor(props){
         super()
-        this.state = {
-            name: "yashwanth"
+        this.state={
+        //    count:1
+        name:"yashwanth"
         }
     }
-    componentDidMount() {
-        // Interval logic moved to button
+    hi=()=>{
+            setInterval(()=>{
+                this.setState({
+                //    count:this.state.count+1
+                name:"yashwanth"
+                })
+            },2000)
     }
-    handleClick = () => {
-        setInterval(() => {
-            this.setState({
-                name: "yashwanth"
-            })
-        }, 2000)
-    }
-    render() {
-        console.log("******** parent component ************")
-        return (
+    render(){
+        return(
             <>
-                <RegComp name={this.state.name} />
-                <PureComp name={this.state.name} />
-                <button onClick={this.handleClick}>Start Interval</button>
+            {console.log(`******** parent Component ****************`)}
+            <PureComp name={this.state.name}/>
+            <RegComp name={this.state.name}/>
+            <MemoComp name={this.state.name}/>
+            <button onClick={this.hi}>On</button>
             </>
         )
     }
