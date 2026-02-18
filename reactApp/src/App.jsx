@@ -9,6 +9,7 @@ import Form from './Class/Form'
 import LifeCycleA from './Class/LifeCycleA'
 import './App.css'
 import ParentComp from './Class/ParentComp'
+import RefsDemo from './Class/RefsDemo'
 function App() {
   return (
     <>
@@ -17,7 +18,8 @@ function App() {
       {/* <List/> */}
       {/* <Form/> */}
       {/* <LifeCycleA /> */}
-      <ParentComp/>
+      {/* <ParentComp/> */}
+      <RefsDemo/>
       {/* Uncomment the below components to see them rendered */}
       {/* <Event />
       <Conditional />
