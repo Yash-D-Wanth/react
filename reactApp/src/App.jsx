@@ -8,7 +8,7 @@ import List from './Class/List'
 import Form from './Class/Form'
 import LifeCycleA from './Class/LifeCycleA'
 import './App.css'
-
+import ParentComp from './Class/ParentComp'
 function App() {
   return (
     <>
@@ -16,12 +16,13 @@ function App() {
       {/* <Conditional/> */}
       {/* <List/> */}
       {/* <Form/> */}
-      <LifeCycleA />
+      {/* <LifeCycleA /> */}
+      <ParentComp/>
       {/* Uncomment the below components to see them rendered */}
-      <Event />
+      {/* <Event />
       <Conditional />
       <List />
-      <Form />
+      <Form /> */}
     </>
   )
 }
