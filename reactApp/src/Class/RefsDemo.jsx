@@ -1,8 +1,8 @@
-import React,{Component} from 'react'
+import react,{Component} from 'react'
 class RefsDemo extends Component{
     constructor(){
         super()
-        // this.inputRef=React.createRef()
+        // this.inputRef=react.createRef()
         this.cbRef=null
         this.setCbRef=(element)=>{
             this.cbRef=element
@@ -10,26 +10,22 @@ class RefsDemo extends Component{
     }
     componentDidMount(){
         // this.inputRef.current.focus()
-        // console.log(this.inputRef)
         if(this.cbRef){
             this.cbRef.focus()
         }
     }
-    clickHandler=()=>{
-        // alert(this.inputRef.current.value)
+    execute=()=>{
+        // console.log(this.inputRef.current.value)
         console.log(this.cbRef.value)
-        alert(this.cbRef.value)
-
     }
     render(){
         return(
             <>
-            <label>for ref:</label><br/>
+            <label>for ref:</label>
             <input type="text" ref={this.inputRef}/>
-            <br></br>
-            <label>for Call back Ref:</label><br/>
-            <input type="text" ref={this.setCbRef}/><br/>
-            <button onClick={this.clickHandler}>click</button>
+            <label>for callback Ref:</label>
+            <input type="text" ref={this.setCbRef}/>
+            <button onClick={this.execute}>click</button>
             </>
         )
     }
