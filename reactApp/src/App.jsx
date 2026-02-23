@@ -7,9 +7,11 @@ import Conditional from './Class/Conditional'
 import List from './Class/List'
 import Form from './Class/Form'
 import LifeCycleA from './Class/LifeCycleA'
-import './App.css'
 import ParentComp from './Class/ParentComp'
-import RefsDemo from './Class/RefsDemo'
+import './App.css'
+// import ParentComp from './Class/ParentComp'
+import InputFocus from './class/InputFocus'
+// import RefsDemo from './Class/RefsDemo'
 function App() {
   return (
     <>
@@ -19,7 +21,8 @@ function App() {
       {/* <Form/> */}
       {/* <LifeCycleA /> */}
       {/* <ParentComp/> */}
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+      <InputFocus/>
       {/* Uncomment the below components to see them rendered */}
       {/* <Event />
       <Conditional />
