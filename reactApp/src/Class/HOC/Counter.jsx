@@ -13,9 +13,10 @@ const Counter=(HigherOrder)=>{
         }))
     }
     render(){
+        console.log(this.name)
         return(
             <>
-            <HigherOrder count={this.state.count} increment={this.increment}/>
+            <HigherOrder name={"yashwanth"} count={this.state.count} increment={this.increment} { ... this.props}/>
             </>
         )
     }

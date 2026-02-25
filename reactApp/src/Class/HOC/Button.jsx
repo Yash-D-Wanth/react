@@ -7,6 +7,7 @@ class Button extends Component{
     render(){
         return(
             <>
+            {console.log(this.props.name)}
             <h1>{this.props.count}</h1>
             <button onClick={this.props.increment}>+</button>
             </>

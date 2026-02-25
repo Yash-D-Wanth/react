@@ -12,6 +12,7 @@ import './App.css'
 // import ParentPortel from './Class/ParentPortel'
 // import FirstParent from './Class/Portals/FirstParent'
 import Button from './Class/HOC/Button'
+import Hover from './Class/HOC/Hover'
 // import ParentComp from './Class/ParentComp'
 // import InputFocus from './Class/InputFocus'
 // import Portal from './Class/Portal'
@@ -37,6 +38,7 @@ function App() {
       <Form /> */}
       {/* <FirstParent/> */}
       <Button/>
+      <Hover/>
     </>
   )
 }
