@@ -11,12 +11,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 // import ParentPortel from './Class/ParentPortel'
 // import FirstParent from './Class/Portals/FirstParent'
-import Button from './Class/HOC/Button'
-import Hover from './Class/HOC/Hover'
+// import Button from './Class/HOC/Button'
+// import Hover from './Class/HOC/Hover'
 // import ParentComp from './Class/ParentComp'
+// import RenderCounter from './Class/RenderProps/RenderCounter'
+// import RenderButton from './Class/RenderProps/RenderButton'
+// import RenderHover from './Class/RenderProps/RenderHover'
 // import InputFocus from './Class/InputFocus'
 // import Portal from './Class/Portal'
 // import RefsDemo from './Class/RefsDemo'
+import ComponentC from './Class/Context/ComponentC'
+import {Provider} from './Class/Context/Context'
 function App() {
   return (
     <>
@@ -34,11 +39,15 @@ function App() {
       {/* <Event />
       <Conditional />
       <List />
-
       <Form /> */}
       {/* <FirstParent/> */}
-      <Button/>
-      <Hover/>
+      {/* <Button/>
+      <Hover/> */}
+      <Provider>
+          <ComponentC/>
+      </Provider>
+      {/* <RenderCounter Children={(count, increment) => <RenderButton count={count} increment={increment}/>}/>
+      <RenderCounter Children={(count, increment) => <RenderHover count={count} increment={increment}/>}/> */}
     </>
   )
 }
